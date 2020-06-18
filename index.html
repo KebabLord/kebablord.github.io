@@ -7,6 +7,12 @@
 	<title>λ Home</title>
 
 <style type="text/css">
+
+@font-face {
+    font-family: chrono;
+    src: url(./chronotype.ttf);
+}
+
 body {
     margin: 0;
     background-color: #181721;
@@ -16,7 +22,7 @@ a {
   	color:#ffe8b1;
   	text-decoration: none;
   	font-size: 28px;
-  	font-family: monospace;
+  	font-family: chrono;
   	/*line-height: 110%;*/
   	float: left;
   	/*text-shadow: -2px -3px 25px #54515a;*/
@@ -40,25 +46,23 @@ a:hover{
 }
 
 .container{
-  align-content: center;
-  text-align: center;
-  position: absolute;
-  margin:auto;
-	
-  top: 0;
+  	align-content: center;
+  	text-align: center;
+  	position: absolute;
+  	margin:auto;	
+	top: 0;
 	right: 0;
 	bottom: 0;
 	left:0;
-  
-  width: 800px;
-  height:800px;
+ 	width: 800px;
+  	height:800px;
 	line-height: 37px;
 }
 
 .rotate {
 	transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
 	position: absolute;
-  margin-top: 130px;
+  	margin-top: 130px;
 }
 
 #upper .fa {
@@ -66,16 +70,16 @@ a:hover{
 	margin-left: -11px;
 }
 #upper a{ 
-  text-align: left;
-  font-size: 40px;
-  width: 100%;
-  padding-bottom: 10px
+  	text-align: left;
+  	font-size: 55px;
+  	width: 100%;
+  	padding-bottom: 10px
 }
 
 .listings h1{
     color:#ffe8b1;
-    font-size: 30px;
-    font-family: monospace;
+    font-size: 32px;
+    font-family: chrono;
     font-weight: 550;
     line-height:0.1em;
     /*margin:10px 0 19px;*/
@@ -87,15 +91,14 @@ a:hover{
 	padding:0 10px; 
 }
 .listings a{
-	font-size: 32px;
+	font-size: 40px;
 }
 
 .social{
 	margin-top: 80px;
 	word-spacing: 10px;
-
-
 }
+
 .social a{
     float:none;
     font-size: 44px;
