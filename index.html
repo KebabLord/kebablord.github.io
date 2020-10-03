@@ -5,115 +5,133 @@
 	<meta name="viewport" content="width=device-width; height=device-height;">
 	<title>owo@junicchi~</title>
 
-<style type="text/css">
-
+	<style type="text/css">
 @font-face {
-    font-family: chrono;
-    src: url(chronotype.ttf);
+     font-family: chrono;
+     src: url(chronotype.ttf);
 }
 
 body {
-    margin: 0;
-    background-color: #181721;
+     margin: 0;
+     background-color:#181721;
 }
 
 a {
-  	color:#ffe8b1;
-  	text-decoration: none;
-  	font-size: 28px;
-  	font-family: chrono;
-  	float: left;
+     color:#ffe8b1;
+     text-decoration: none;
+     font-size: 28px;
+     font-family: chrono;
+     float: left;
 }
 
-a:hover,
-img:hover {
-  	color:white;
-  	filter: grayscale(100%);
+a:hover, img:hover {
+     color:white;
+     filter: grayscale(100%);
 }
 
 .comfy-background {
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  	image-orientation: from-image;
-  	min-width: 800px;
+     text-align: center;
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     image-orientation: from-image;
+     min-width: 800px;
 }
 
 .container{
-  	align-content: center;
-  	text-align: center;
-  	position: absolute;
-  	margin:auto;	
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left:0;
- 	width: 800px;
-  	height:800px;
-	line-height: 37px;
+     align-content: center;
+     text-align: center;
+     position: absolute;
+     margin:auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left:0;
+     width: 800px;
+     height:800px;
+     line-height: 37px;
 }
 
 .rotate {
-	transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
-	position: absolute;
-  	margin-top: 130px;
+     transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
+     position: absolute;
+     margin-top: 130px;
 }
 
-#upper .fa {
-	font-size: 30px;
-	margin-left: -11px;
+.rotate2 {
+     transform: rotateX(67deg) rotateY(-13deg) rotateZ(54deg);
+     position: absolute;
+     margin-top: 732px;
+     margin-left: 382px;
 }
-#upper a{ 
-  	text-align: left;
-  	font-size: 55px;
-  	width: 100%;
-  	padding-bottom: 10px
+
+#upper.fa {
+     font-size: 30px;
+     margin-left: -11px;
+}
+
+#upper a{
+     text-align: left;
+     font-size: 55px;
+     width: 100%;
+     padding-bottom: 10px 
 }
 
 .listings h1{
-    color:#ffe8b1;
-    font-size: 32px;
-    font-family: chrono;
-    font-weight: 550;
-    line-height:0.1em;
-    /*margin:10px 0 19px;*/
-    border-bottom: 1px solid #ffe8b1; 
-	 
+     color:#ffe8b1;
+     font-size: 32px;
+     font-family: chrono;
+     font-weight: 550;
+     line-height:0.1em;
+    /*margin:10px 0 19px;
+    */
+     border-bottom: 1px solid#ffe8b1;
 }
+
 .listings span {
-	background:#181721;
-	padding:0 10px; 
+     background:#181721;
+     padding:0 10px;
 }
+
+.listings span.license {
+     background:none;
+     padding:0 10px;
+     color:#ffe8b1;
+     font-size: 42px;
+     font-family: chrono;
+     font-weight: 550;
+    /*margin:10px 0 19px;
+    */
+}
+
 .listings a{
-	font-size: 40px;
+     font-size: 40px;
 }
 
 .social{
-	margin-top: 80px;
-	word-spacing: 10px;
+     margin-top: 80px;
+     word-spacing: 10px;
 }
 
 .social a{
-    float:none;
-    font-size: 44px;
+     float:none;
+     font-size: 44px;
 }
 
 .ico {
-	width: 50px;
+     width: 50px;
 }
 
-</style>
-
+	</style>
 </head>
+
 <body>
-	<img class="comfy-background" src="imejus/gif_nod.gif">
+  <img class="comfy-background" src="imejus/gif_nod.gif">
   <div class="container">
-   <div class="rotate">
-	<!---->
+  <div class="rotate">
 	<div id="upper">
 		<a href="./about_me.html">About me</a><br>
 		<a href="./gpg.html">Contact</a><br>
@@ -148,7 +166,13 @@ img:hover {
 		  <img class="ico" src="./imejus/ico_steam.png">
 		</a>
     </div>
-	
+   </div>
+
+   <div class="rotate2">
+       <div class="listings">
+           <!-- Copyright includes only the code and the images specified in ./imejus/copyrights -->
+           <span class="license">© Juko</span>
+       </div>
    </div>
   </div>
 
