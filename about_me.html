@@ -1,18 +1,119 @@
+<!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width; height=device-height;">
-      <!-- <meta name="description" content="">-->
-      <link rel="stylesheet" href="about_me.css">
-      <title>owo@junicchi~/About</title>
-   </head>
-   <body>
-      <div align="center"><img src="imejus/rain.gif"></div>
-      <div class="info" align="center">
-            <p>I'm Juko</p>
-            <p style="color:#b1cbc8">
-               I like microcontrollers, linux and terminals <br>
-            </p>
-      </div>
-   </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; height=device-height;">
+	<title>owo@junicchi~</title>
+	<style type="text/css">
+		
+@font-face {
+    font-family: chrono;
+    src: url(chronotype.ttf);
+}
+
+body {
+    margin: 0;
+    background-color:#181721;
+}
+
+a {
+    color:#ffe8b1;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: chrono;
+    /*float: left;*/
+}
+
+a:hover, img:hover {
+    color:white;
+    filter: grayscale(100%);
+}
+
+.comfy-background {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    image-orientation: from-image;
+    min-width: 800px;
+}
+
+.container{
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    width: 800px;
+    height:800px;
+    line-height: 37px;
+}
+
+.rotate {
+    transform: rotateX(30deg) rotateY(-45deg) rotateZ(0deg);
+    position: absolute;
+    margin-top: 243px;
+}
+
+.rotate2 {
+    transform: rotateX(67deg) rotateY(-13deg) rotateZ(54deg);
+    position: absolute;
+    margin-top: 732px;
+    margin-left: 382px;
+}
+
+#upper a{
+    text-align: left;
+    font-size: 44px;
+    width: 100%;
+    padding-bottom: 10px 
+}
+
+.ico {
+	width:38px;
+	margin-left: 17px;
+}
+
+.listings span.license {
+    background:none;
+    padding:0 10px;
+    color:#ffe8b1;
+    font-size: 42px;
+    font-family: chrono;
+    font-weight: 550;
+}
+	</style>
+</head>
+
+<body>
+  <img class="comfy-background" src="imejus/gif_nod.gif">
+  <div class="container">
+	<div class="rotate">
+		<div id="upper">
+			<a>Hi it's Juko <br>
+	 		I like microcontrollers <br>
+	 		linux and terminals. 
+			</a>
+			<br>
+		</div>
+	    <div class="social">
+			<a title="Return" href="./index.html">
+				<img class="ico" src="./imejus/ico_return.png">
+			</a>
+	    </div>
+	</div>
+    <div class="rotate2">
+        <div class="listings">
+            <!-- Copyright includes only the code and the images specified in ./imejus/copyrights -->
+            <span class="license">© Juko</span>
+        </div>
+    </div>
+  </div>
+</body>
 </html>
