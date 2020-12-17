@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+<!--
+<script language="JavaScript">
+
+function autoResize(id){
+    var newheight;
+    var newwidth;
+
+    if(document.getElementById){
+        newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
+        newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
+    }
+
+    document.getElementById(id).height= (newheight) + "px";
+    document.getElementById(id).width= (newwidth) + "px";
+}
+
+
+var myIframe = document.getElementById('iframe1');
+myIframe.onload = function () {
+    myIframe.contentWindow.scrollTo(xcoord,50);
+}
+</script>
+-->
+
+<style type="text/css">
+
+body{
+	background-image: url(./projects_files/bg.png);
+	margin:32px;
+	color:#b4bbc6;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	font-family: monospace;
+	margin-bottom: 90px;
+}
+
+#header{
+	font-size:26px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer{
+	font-size:20px;
+}
+
+#imaj{
+	width: 100%;
+	border: 2px solid #b4bbc6;
+	border-radius: 12px;
+}
+
+iframe{
+	border: 2px solid #b4bbc6;
+	border-radius: 12px;
+}
+
+#iframe1{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+		border-right:none;
+}
+
+#iframe2{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<img id="imaj" src="./projects_files/takoyaki.svg">
+
+	<div id="header">
+		Takoyaki
+	</div>
+	<div id="footer">
+		Instant burner mail account creation script. Basically cli version of m.kuku.lu and a cli frontend to sute-mail-python library.
+	</div>
+</div>
+
+<div class="container">
+	<img id="imaj" src="./projects_files/teriyaki.gif">
+
+	<div id="header">
+		Teriyaki
+	</div>
+	<div id="footer">
+		Control your phone using advantages of the termux-api over ssh from your linux pc.
+	</div>
+</div>
+
+<div class="container">
+
+	<table style="width:100%">
+	  <tr>
+	    <th width="auto"><iframe width="100%" scrolling="no" height="600px" id="iframe1"  src="./projects_files/gameboy_mini/gameboy.html"></iframe></th>
+	    <th width="auto"><iframe width="100%" scrolling="no" height="600px" id="iframe2"  src="./trashDesigns/clouds/clouds.html"></iframe></th>
+	  </tr>
+	</table>
+
+	<div id="header">
+		Trash Designs
+	</div>
+	<div id="footer">
+		Some of my css and html only web designs. 
+	</div>
+</div>
+
+<div class="container">
+	<img id="imaj" src="./projects_files/danpu.png">
+
+	<div id="header">
+		Danpu
+	</div>
+	<div id="footer">
+		Theme for foolfuuka and vichan based imageboards.
+	</div>
+</div>
+
+</body>
+</html>
