@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"> 
 	<title>owo@junicchi~/Documents</title>
+	<style type="text/css">
 
-<!--
-<script language="JavaScript">
-
-function autoResize(id){
-    var newheight;
-    var newwidth;
-
-    if(document.getElementById){
-        newheight=document.getElementById(id).contentWindow.document .body.scrollHeight;
-        newwidth=document.getElementById(id).contentWindow.document .body.scrollWidth;
-    }
-
-    document.getElementById(id).height= (newheight) + "px";
-    document.getElementById(id).width= (newwidth) + "px";
+@font-face {
+     font-family: chrono;
+     src: url(chronotype.ttf);
 }
-
-
-var myIframe = document.getElementById('iframe1');
-myIframe.onload = function () {
-    myIframe.contentWindow.scrollTo(xcoord,50);
-}
-</script>
--->
-
-<style type="text/css">
 
 body{
+	background-color: #282c34;
 	background-image: url(./projects_files/bg.png);
 	margin:32px;
 	color:#b4bbc6;
+}
+
+.title{
+	font-size: 58px;
+	margin-bottom:50px;
+	color:#bfe1ff;
 }
 
 .container{
 	max-width: 1200px;
 	margin: auto;
 	text-align: center;
-	font-family: monospace;
+	font-family: chrono;
 	margin-bottom: 90px;
 }
 
 #header{
-	font-size:26px;
+	font-size:37px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
 #footer{
-	font-size:20px;
+	font-size:26px;
 }
 
 #imaj{
 	width: 100%;
+	border: 2px solid #b4bbc6;
+	border-radius: 12px;
+}
+
+video{
 	border: 2px solid #b4bbc6;
 	border-radius: 12px;
 }
@@ -67,7 +60,7 @@ iframe{
 #iframe1{
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-		border-right:none;
+	border-right:none;
 }
 
 #iframe2{
@@ -76,58 +69,78 @@ iframe{
 	border-left: none;
 }
 
-</style>
+a{
+	text-decoration: none;
+	color:#b4bbc6;
+}
+
+	</style>
 </head>
 <body>
 
 <div class="container">
+
+	<div class="title">
+		Projects
+		<div id="footer">
+			This page is just a demo portfolio design for testing purposes.
+			Content is mostly my weekend tier minor cringy designs and some cli tools.
+			Currently it's so dirty that it contains 2 iframes and 3 massive sized files.
+			I should have been using SVG instead.
+		</div>
+	</div>
+
 	<img id="imaj" src="./projects_files/takoyaki.svg">
-
-	<div id="header">
-		Takoyaki
-	</div>
-	<div id="footer">
-		Instant burner mail account creation script. Basically cli version of m.kuku.lu and a cli frontend to sute-mail-python library.
-	</div>
+	<a href="https://github.com/KebabLord/takoyaki">
+		<div id="header">
+			Takoyaki
+		</div>
+		<div id="footer">
+			Instant burner mail account creation script. Basically cli version of m.kuku.lu and a cli frontend to sute-mail-python library.
+		</div>
+	</a>
 </div>
 
 <div class="container">
-	<img id="imaj" src="./projects_files/teriyaki.gif">
-
-	<div id="header">
-		Teriyaki
-	</div>
-	<div id="footer">
-		Control your phone using advantages of the termux-api over ssh from your linux pc.
-	</div>
+	<video controls><source src="./projects_files/teriyaki.mp4" type="video/mp4"></video>
+	<a href="https://github.com/KebabLord/teriyaki">
+		<div id="header">
+			Teriyaki
+		</div>
+		<div id="footer">
+			Control your phone using advantages of the termux-api over ssh from your linux pc.
+		</div>
+	</a>
 </div>
 
 <div class="container">
-
 	<table style="width:100%">
 	  <tr>
-	    <th width="auto"><iframe width="100%" scrolling="no" height="600px" id="iframe1"  src="./projects_files/gameboy_mini/gameboy.html"></iframe></th>
-	    <th width="auto"><iframe width="100%" scrolling="no" height="600px" id="iframe2"  src="./trashDesigns/clouds/clouds.html"></iframe></th>
+	    <th><iframe width="100%" scrolling="no" height="600px" id="iframe1"  src="./projects_files/gameboy_mini/gameboy.html"></iframe></th>
+	    <th><iframe width="100%" scrolling="no" height="600px" id="iframe2"  src="./trashDesigns/clouds/clouds.html"></iframe></th>
 	  </tr>
 	</table>
-
-	<div id="header">
-		Trash Designs
-	</div>
-	<div id="footer">
-		Some of my css and html only web designs. 
-	</div>
+	<a href="https://github.com/KebabLord/trashDesigns">
+		<div id="header">
+			Trash Designs
+		</div>
+		<div id="footer">
+			Some of my css and html only web designs.
+		</div>
+	</a>
 </div>
 
 <div class="container">
-	<img id="imaj" src="./projects_files/danpu.png">
-
-	<div id="header">
-		Danpu
-	</div>
-	<div id="footer">
-		Theme for foolfuuka and vichan based imageboards.
-	</div>
+	<a href="https://github.com/KebabLord/foolfuuka-theme-danpu">
+		<img id="imaj" src="./projects_files/danpu.png">
+	
+		<div id="header">
+			Danpu
+		</div>
+		<div id="footer">
+			Theme for foolfuuka and vichan based imageboards.
+		</div>
+	</a>
 </div>
 
 </body>

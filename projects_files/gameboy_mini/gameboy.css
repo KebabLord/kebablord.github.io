@@ -1,9 +1,10 @@
 /* GameBoi themed blog by Github:Kebablord */
 
 #c{
-  position: relative;
+  /*! position: relative; */
   /*! top: 28%; */
-  transform: translateY(12%);
+  /*! transform: translateY(50%); */
+  margin-top: 100px;
 }
 
 @font-face {
@@ -14,8 +15,8 @@
 body {
 	background-color:#C5F0C2;
 	font-family: gameboy;
-	font-size:30px;
-	line-height: 32px;
+	font-size:25px;
+	line-height: 27px;
 	text-shadow: 4px 3px black;
 	color: #5FB1A1;
 }
@@ -25,7 +26,7 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 	padding-top:  16px;
-	width: 230px;
+	width: 180px;
 }
 
 a{
@@ -38,8 +39,8 @@ a{
 	margin-left: auto;
 	margin-right: auto;
 	/*! margin-top: 20vh; */
-	width: 460px;
-	height: 460px;
+	width: 380px;
+	height: 380px;
 	box-shadow: 
     0 0 0 4px #2A1C02,
     0 0 0 8px #1D5F6B,
@@ -95,7 +96,7 @@ a{
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 460px;
+	width: 380px;
 	text-shadow: none;
 	font-size: 20px;
 	letter-spacing: -2px;
