@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+  font-family: "Open Sans", sans-serif!important;
+  font-optical-sizing: auto;
+  /*font-weightX: weight;*/
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: lightgray;
+}
+
+
+.content {
+    width: 80%;
+    background-color: white;
+}
+
+/*.yarisma_img img{
+    max-widthx: 100%;
+    margin-topx: 42px;
+} */
+
+@media (max-width: 992px) { /* md screens and up */
+    .yarisma_img img{
+        max-width: 70%!important;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+ul {
+    list-style-type: disc; /* Sets the marker type to circle */
+    font-size: 18px; /* Adjust the font size of the circle */
+    font-weight: bold;
+}
+ol {
+    list-style-type: none; /* Hides the markers for nested lists */
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 20px!important;
+}
+ul li::marker {
+    font-size: 150%!important;
+}
+
+.schema-box{
+    margin-bottom:40px;
+}
+
+.carousel { overflow: hidden!important; padding-bottom: 4rem!important; }
+.carousel-caption { top: 100%!important;}
+.carousel-inner { overflow: visible!important;}
+.carousel-control-next, .carousel-control-prev, .carousel-indicators { bottom: 4rem!important; }
+
+.carousel-caption {
+    position: relative!important;
+    left: auto!important;
+    right: auto!important;
+}
+
+#meb-caption {
+    font-size: 0.95em;
+    color: black;
+    opacity: 0.6;
+  }
+
+/*
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators  {
+    filter: invert(100%);
+}
+*/
+
+
+/* On smaller screens, decrease text size 
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+*/
